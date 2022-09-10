@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'lib-pk-button',
   template: `
-    <p>
-      Prueba definitivasss
-    </p>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
   `,
   styles: [
   ]
