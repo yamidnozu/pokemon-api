@@ -16,6 +16,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "pk-button": [
+        "dist/pk-button/pk-button",
+        "dist/pk-button"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
