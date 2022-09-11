@@ -1,0 +1,19 @@
+
+<app-go-back-button 
+  [title]="'Favoritos'"
+  (click)="goToPage('pages/home')">
+</app-go-back-button>
+
+<container-cards>
+  <ng-container *ngFor="let fav of this.stateGlobal.favorites$ | async">
+    <app-card
+      (clicked)="goToPage('pages/detail/' + fav.id)"
+      (changeFavorite)="changeStateIfFavorite($event, fav.pokemon)"
+      [id]="fav.pokemon.id"
+      [urlImage]="fav.pokemon.imageURL"
+      [name]="fav.pokemon.name"
+      [isFavorite]="fav.pokemon.isFavorite!"
+    >
+    </app-card>
+  </ng-container>
+</container-cards>

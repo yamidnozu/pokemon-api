@@ -1,0 +1,51 @@
+<div class="relative">
+  <pkm-fav-button
+    [checked]="isFavorite"
+    class="absolute lg:top-1 top-1 lg:right-1 right-1 absolute lg:top-3 top-3 lg:right-3 right-3"
+    (toogle)="changeStateFavorite($event)"
+  ></pkm-fav-button>
+</div>
+
+<div
+  class="fill-red-500lg:max-w-sm w-full lg:flex rounded-lg"
+  style="background: white"
+  (click)="onclicked()"
+>
+  <!-- class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" -->
+
+  <div
+    class="h-48 lg:w-48 w-full h-auto flex justify-center"
+    style=""
+    title="Woman holding a mug"
+  >
+    <img
+      class="mt-12 lg:mt-0 h-36 w-36"
+      src="{{ urlImage }}"
+      loading="lazy"
+      alt="women"
+    />
+  </div>
+
+  <div class="flex flex-col justify-center leading-normal">
+    <!-- <div class=""> -->
+    <p class="px-2 text-sm text-gray-600 flex items-center">{{ id | filledid
+       }}</p>
+    <div class="text-gray-900 font-bold text-xl mb-2 px-2">{{ name | titlecase}}</div>
+    <div class="px-2">
+      <span
+        class="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+        >#</span
+      >
+      <span
+        class="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+        >#travel</span
+      >
+     
+    </div>
+    <!-- </div> -->
+  </div>
+</div>
+<!-- <div class="m-6 inline-flex relative w-fit">
+  <div class="absolute inline-block top-0 right-0 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 p-2.5 text-xs bg-pink-700 rounded-full z-10"></div>
+  
+</div> -->

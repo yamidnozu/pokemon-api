@@ -1,5 +1,11 @@
-<lib-pk-button></lib-pk-button>
+<!-- Top nav bar  -->
+<pkm-top-bar>
+  <app-icon-notification
+    [notifications]="(this.stateGlobal.favorites$ | async)?.length || 0"
+    (click)="goToPage('pages/favorites')"
+  ></app-icon-notification>
+</pkm-top-bar>
 
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+
+<!-- Navegación -->
+<router-outlet></router-outlet>

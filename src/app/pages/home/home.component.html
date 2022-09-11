@@ -1,0 +1,14 @@
+<container-cards (scrollDown)="getMorePokemons()">
+  <ng-container *ngFor="let card of this.stateGlobal.listPokemons$ | async">
+    <app-card
+    (clicked)="goToPage('pages/detail/' + card.id)"
+      (changeFavorite)="changeStateIfFavorite($event, card)"
+      [id]="card.id"
+      [urlImage]="card.imageURL"
+      [name]="card.name"
+      [isFavorite]="card.isFavorite!"
+    >
+    </app-card>
+  </ng-container>
+
+</container-cards>

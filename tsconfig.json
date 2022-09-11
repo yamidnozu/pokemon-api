@@ -17,10 +17,11 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "pk-button": [
-        "dist/pk-button/pk-button",
-        "dist/pk-button"
-      ]
+      "pkm-button": [
+        "dist/pkm-button/pkm-button",
+        "dist/pkm-button"
+      ],
+      
     },
     "target": "es2017",
     "module": "es2020",

@@ -1,0 +1,55 @@
+<section class="container">
+  <!-- boton para regresar a home -->
+  <app-go-back-button (click)="goToPage('pages/home')"> </app-go-back-button>
+
+  <div class="grid place-items-center rounded-lg">
+    <div class="max-w-sm m-auto">
+      <div
+        class="h-48 lg:w-48 w-full h-auto flex justify-center m-auto mb-4"
+        style=""
+        title="Woman holding a mug"
+      >
+        <img
+          class="mt-12 lg:mt-0 h-36 w-36"
+          src="{{ this.urlImage }}"
+          loading="lazy"
+          alt="women"
+        />
+      </div>
+      <div class="p-5 bg-white rounded-lg border border-gray-200">
+        <h1
+          class="mb-2 text-center text-6xl font-bold tracking-tight text-black-900"
+        >
+          {{ pokemon?.name | titlecase }}
+        </h1>
+
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          Este pokemon es lo máximo, es un pokemon de tipo agua y fue
+          descubierto en la región de Kanto.
+        </p>
+        <!-- Mostrar el ID: id -->
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <strong>ID:</strong> {{ pokemon!.id | filledid }}
+        </p>
+
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <strong>Altura:</strong> {{ height }}
+        </p>
+
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <strong>Peso:</strong> {{ weigth }}
+        </p>
+
+
+        <pkm-button
+          text="Agregar a favoritos"
+          [widthFull]="true"
+          (click)="addFavorite()"
+        >
+        </pkm-button>
+
+
+      </div>
+    </div>
+  </div>
+</section>
