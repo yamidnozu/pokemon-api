@@ -6,7 +6,7 @@ import { DataPokemon, IResponsePokemons, ResponsePokemonById } from 'src/app/cor
   providedIn: 'root'
 })
 export class PokeapiService {
-  private baseURL: string = "http://pokeapi.co/api/v2/";
+  private baseURL: string = "https://pokeapi.co/api/v2/";
   private nextUrl: string = `${this.baseURL}pokemon`;
   constructor(
     private http: HttpClient
