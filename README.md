@@ -1,32 +1,7 @@
-# Rocketfypokemon
+### Pokemon - Pokeapi
+[![image](https://i.im.ge/2022/09/19/1sYRF8.image.png)](https://im.ge/i/1sYRF8)
+- Este proyecto contiene un proyecto web en angular v13, que contiene tres pantallas, y una libreria con tres componentes reusables.
+- El proyecto contiene 3 secciones, un home en donde se encuentra un listado de pokemones, con scroll infinito con cards de pokemones que se van cargando a medida de que aumenta el scroll. Sección de favoritos y detalle de un pokemon que es cuando se clickea en alguna card.
+- Se  hace uso de el api PokeApi https://pokeapi.co/
+- El demo del proyecto esta en esta url https://pokemon-8a207.web.app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-
-## Changes
-
-- Add tailwindcss, doc: https://tailwindcss.com/docs/guides/angular
